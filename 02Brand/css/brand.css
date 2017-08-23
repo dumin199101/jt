@@ -1,7 +1,7 @@
 /**
    公共样式
  */
- body{font-family: "Hiragino Sans GB",Helvetica,Arial,sans-serif,"微软雅黑";}
+body{font-family: "Hiragino Sans GB",Helvetica,Arial,sans-serif,"微软雅黑";}
 .mt-30{margin-top:30px;}
 .ml-5{margin-left:5px;}
 .thumbnail a.img{overflow:hidden;display:block;width:100%;height:auto;}
@@ -10,15 +10,6 @@
 .jt-box{background-color: #ce1621;display: inline-block;height: 30px;width: 10px;}
 .jt-navigator{margin:30px 0;}
 .jt-nav .h3{letter-spacing: 5px;}
-
-/*分区导航*/
-.jt-nav{padding:20px 0;background-color: #ce1621;  box-shadow: 0 2px 4px 0 rgba(255, 89, 99, 0.21);color:#fff;margin-bottom:30px;position:relative;}
-.jt-nav a{color:#fff;}
-.jt-nav .look-more{position: absolute;right:20px;top:15px;letter-spacing:3px;font-weight:bold;}
-.jt-nav .look-more > .glyphicon{top:3px;margin-left:15px;}
-
-/*区块间距*/
-#jt-tcz-container,#jt-tcr-container{margin-bottom:30px;}
 
 /*头部导航*/
 .navbar-jt{position:absolute;right:0;left:0;top:0;background: #fff;z-index:100000;border-radius:0px;border:none;}
@@ -33,13 +24,6 @@
 .carousel-indicators .active {width: 12px;height: 12px;margin: 0;background-color: #ce1621;}
 .carousel-indicators li {background-color:#e6e6e6;border:none;}
 
-/*底部轮播图*/
-.jt-flexisel{padding:0 50px;background:#f4f4f3;}
-.jt-flexisel .flexisel > li > a > div.border{width:65%;height:1px;border: solid 1px #000;margin:0 5px 0 10px;}
-.jt-flexisel .flexisel > li > a >div.date{color: #000;margin:0 15px 0 0;}
-.jt-flexisel .flexisel > li > a{color:#000;}
-.jt-flexisel .flexisel > li > a >  h5.act-title{color:#000;padding:0 10px;font-weight:500;}
-
 /*品牌*/
 #jt-brand .jt-brand > .brand-divider{width:100%;height:2px;border-bottom:2px dashed  #c9cdd0;margin-left:-5px;}
 .jt-brand{padding-left:5px;}
@@ -49,20 +33,11 @@
 .jt-brand ul li.active > .mark-divider{display:block;position:absolute;bottom:-12px;left:2px;}
 .jt-brand ul li.active a{color: #ce1621;}
 
-/*太潮人*/
-#jt-tcr-container .thumbnail:hover{border-right:4px solid #ce1621;border-bottom:4px solid #ce1621;}
-.jt-tcr-line{width:100%;height:1px;border: solid 1px #e7e7e7;margin:10px 0;}
-.jt-tcr-desc{color:#666666;line-height:1.5;padding-right:10px;}
-.job{color:#999999;}
-.jt-tcr-read{position:relative;}
-.jt-tcr-read .glyphicon{position:absolute;top: 4px;right:0px;}
-.jt-tcr-read a{color:#ce1621;font-size:14px;display:block;}
+/*品牌列表*/
+#brand-list-container{margin-top:30px;}
+#brand-list-container > .container{padding:20px;background:#f6f6f6;}
+#brand-list-container > .container img{border:1px solid yellow;}
 
-/*太潮志*/
-.jt-tcz-content .caption{padding:20px 10px;position:relative;}
-.jt-tcz-content .caption .glyphicon{top:2px;}
-.jt-tcz-read{position:absolute;right:30px;top:25px;}
-.jt-tcz-read a{color:#ce1621;font-size:14px;}
 
 /*底部*/
 footer{background: #9b9b9b;padding:10px 0;}
