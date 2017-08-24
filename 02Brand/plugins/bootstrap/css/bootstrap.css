@@ -1600,7 +1600,6 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
-    border:1px solid yellow;
   }
 }
 .container-fluid {

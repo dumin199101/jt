@@ -136,17 +136,112 @@
 <div id="brand-list-container">
      <div class="container">
          <div class="row">
+             <div class="col-md-2 text-center">
+                 <div class="thumbnail letter">
+                     <span class="h1">B</span>
+                 </div>
+             </div>
              <div class="col-md-2">
-                 <img class="img-responsive" src="images/brand_01.png" alt="">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_1.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img  src="images/brand_2.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_3.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_1.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_2.png" alt="">
+                     </a>
+                 </div>
              </div>
              <!--内容区-->
+             <!--<div class="col-md-12 brand-des">-->
+                 <!--<h3 class="cn-name">Balenciaga</h3>-->
+                 <!--<h3 class="en-name">巴黎世家</h3>-->
+                 <!--<p>Beams 是奢侈原创的代表品牌。品牌由西班牙籍克里斯托伯. 巴伦夏卡 (Cristóbal Balenciaga)于1919年创立，1936 年扬名于巴黎。凭借精湛的剪裁与缝制技术，加上对面料的不断创新，该法国时装品牌定义了现代优雅。品牌绝不妥协的原则与革新性的廓形剪裁，在创意总监王大仁(Alexander Wang)的带领下延续至今。自2012 年出任创意总监起，王大仁(Alexander Wang)扩大了Balenciaga的产品线 - 加入新款皮具与配件，香水与眼镜透过现代设计理念，他重新诠释了这一历史悠久的传奇时尚品牌，同时注入自己的独创风格。</p>-->
+                 <!--<h4>-->
+                     <!--位置：N2-10-->
+                     <!--电话：010-6416 0058-->
+                     <!--营业时间：10:00-22:00-->
+                 <!--</h4>-->
+             <!--</div>-->
+             <!--内容区-->
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_3.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_1.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_2.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_3.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_1.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_2.png" alt="">
+                     </a>
+                 </div>
+             </div>
+             <div class="col-md-2">
+                 <div class="thumbnail">
+                     <a href="javascript:void(0);" class="img">
+                         <img src="images/brand_3.png" alt="">
+                     </a>
+                 </div>
+             </div>
+
          </div>
      </div>
 </div>
 <!--品牌列表-->
-
-
-
 
 <!--底部导航-->
 <footer>
@@ -166,6 +261,43 @@
 </footer>
 <!--底部导航-->
 
+<script type="text/javascript">
+    $(".thumbnail").bind("click",function(){
+        $(".brand-des").remove();
+        brand_show($(this).parent().index(),$(this));
+    });
+
+    function brand_show(idx,e){
+        sw_bs=0;
+        var x = 6, y = 0;
+        $(".brand-des").remove();
+        for(var i=1;i<100;i++){
+            y=x*i;
+            if(y>idx){
+                if(y>$(".thumbnail").size()){y=$(".thumbnail").size();}
+                break;
+            }
+        }
+        $(".thumbnail").parent().eq(y-1).after('<div class="col-md-12 brand-des">\n' +
+            '                 <h3 class="cn-name">Balenciaga</h3>\n' +
+            '                 <h3 class="en-name">巴黎世家</h3>\n' +
+            '                 <p>Beams 是奢侈原创的代表品牌。品牌由西班牙籍克里斯托伯. 巴伦夏卡 (Cristóbal Balenciaga)于1919年创立，1936 年扬名于巴黎。凭借精湛的剪裁与缝制技术，加上对面料的不断创新，该法国时装品牌定义了现代优雅。品牌绝不妥协的原则与革新性的廓形剪裁，在创意总监王大仁(Alexander Wang)的带领下延续至今。自2012 年出任创意总监起，王大仁(Alexander Wang)扩大了Balenciaga的产品线 - 加入新款皮具与配件，香水与眼镜透过现代设计理念，他重新诠释了这一历史悠久的传奇时尚品牌，同时注入自己的独创风格。</p>\n' +
+            '                 <h4>\n' +
+            '                     位置：N2-10\n' +
+            '                     电话：010-6416 0058\n' +
+            '                     营业时间：10:00-22:00\n' +
+            '                 </h4>\n' +
+            '             </div>');
+
+        $(".thumbnail").removeClass("active");
+        e.addClass("active");
+        $(".brand-des").slideDown(function(){
+            setTimeout(function(){
+                sw_bs=1;
+            },300);
+        });
+    }
+</script>
 
 
 
