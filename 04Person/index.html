@@ -17,6 +17,25 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="plugins/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
+    <!--底部轮播-->
+    <link rel="stylesheet" type="text/css" href="plugins/flexisel/css/flexisel.css">
+    <script src="plugins/flexisel/js/jquery.flexisel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".flexisel").flexisel({
+                visibleItems: 4,
+                itemsToScroll: 1,
+                animationSpeed:1000,
+                navigationTargetSelector:".jt-flexisel",
+                autoPlay: {
+                    enable: true,
+                    interval: 5000,
+                    pauseOnHover: true
+                }
+            });
+        });
+    </script>
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -101,6 +120,78 @@
             </div>
         </div>
     </div>
+
+    <!--活动轮播-->
+    <div id="jt-activity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 jt-flexisel">
+                    <ul class="flexisel">
+                        <li>
+                            <a href="">
+                                <img src="images/01.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈1</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/02.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈2</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/03.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈3</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/04.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈4</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/04.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈5</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/03.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈6</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/02.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈7</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/01.png"/>
+                                <div class="date text-left">06-05-17</div>
+                                <h5 class="text-left act-title">妆点盛夏,积分礼金大回馈8</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活动轮播-->
+
+
+
     <div class="container-fluid">
         <div class="container mt-50">
             <div class="row">
