@@ -14,6 +14,13 @@ body{font-family: "Hiragino Sans GB",Helvetica,Arial,sans-serif,"微软雅黑";}
 
 
 /*区块间距*/
+#jt-act-container{margin-bottom:30px;}
+
+/*分区导航*/
+.jt-act-more .look-more{position: absolute;right:20px;top:28px;letter-spacing:3px;font-weight:bold;}
+.jt-act-more .look-more > .glyphicon{top:3px;margin-left:15px;}
+.jt-act-more >a > .look-more {color:#ce1621;}
+
 
 
 
@@ -31,10 +38,11 @@ body{font-family: "Hiragino Sans GB",Helvetica,Arial,sans-serif,"微软雅黑";}
 .carousel-indicators li {background-color:#e6e6e6;border:none;}
 
 /*活动轮播*/
-#jt-activity{margin-bottom:30px;}
-.jt-flexisel .flexisel > li > a >div.date{color: #fff;padding:0 30px;position:absolute;bottom:45px;}
-.jt-flexisel .flexisel > li > a{color:#fff;}
-.jt-flexisel .flexisel > li > a >  h5.act-title{color:#fff;padding:0 30px;font-weight:500;position:absolute;bottom:10px;}
+.jt-latest-act-list img{margin-bottom:20px;}
+.jt-latest-act-list span.h4{color:#333;line-height:1.5;}
+.old-act-date{position:absolute;left:40px;bottom:40px;color:#fff;}
+.old-act-title{position:absolute;left:40px;bottom:10px;color:#fff;}
+.jt-old-act-list div{margin-bottom:30px;}
 
 
 
