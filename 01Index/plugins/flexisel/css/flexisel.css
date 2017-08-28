@@ -50,10 +50,10 @@
 
 .nbs-flexisel-nav-left,
 .nbs-flexisel-nav-right {
-    padding:5px 10px;
-    border-radius:15px;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;      
+    padding:10px 15px;
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
     position: absolute;
     cursor: pointer;
     z-index: 4;
@@ -64,7 +64,7 @@
 }
 
 .nbs-flexisel-nav-left {
-    left: 10px;
+    left: 0px;
 }
 
 .nbs-flexisel-nav-left:before {
@@ -78,7 +78,7 @@
 }
 
 .nbs-flexisel-nav-right {
-    right: 5px;    
+    right: 0px;
 }
 
 .nbs-flexisel-nav-right:before {
