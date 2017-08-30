@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无限滚动加载数据</title>
+    <script type="text/javascript" src="plugins/infinite-scroll/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="plugins/infinite-scroll/infinite-scroll.js"></script>
+    <link rel="stylesheet" href="plugins/infinite-scroll/common.css">
+    <style type="text/css">
+        #content {
+            width: 480px;
+            margin: 36px auto;
+            font-size: 1.5em;
+        }
+        #content p {
+            margin: 0 0 3em;
+        }
+
+        #pages {
+            text-align: center;
+            margin: 0 auto 72px;
+            font-size: 1.5em;
+        }
+        .loading{text-align: center;font-size: 20px;margin:20px 0}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p class="item"><a href="" target="_blank">1、PHP生成图片验证码</a></p>
+        <p class="item"><a href="" target="_blank">2、jQuery实现table上移下移和置顶</a></p>
+        <p class="item"><a href="" target="_blank">3、基于jQuery的cookie插件</a></p>
+        <p class="item"><a href="" target="_blank">4、jQuery仿淘宝图片放大镜插件imagezoom</a></p>
+        <p class="item"><a href="" target="_blank">5、简单jQuery商品属性选择表单</a></p>
+        <p class="item"><a href="" target="_blank">1、PHP生成图片验证码</a></p>
+        <p class="item"><a href="" target="_blank">2、jQuery实现table上移下移和置顶</a></p>
+        <p class="item"><a href="" target="_blank">3、基于jQuery的cookie插件</a></p>
+        <p class="item"><a href="" target="_blank">4、jQuery仿淘宝图片放大镜插件imagezoom</a></p>
+        <p class="item"><a href="" target="_blank">5、简单jQuery商品属性选择表单</a></p>
+        <p class="item"><a href="" target="_blank">1、PHP生成图片验证码</a></p>
+        <p class="item"><a href="" target="_blank">2、jQuery实现table上移下移和置顶</a></p>
+        <p class="item"><a href="" target="_blank">3、基于jQuery的cookie插件</a></p>
+        <p class="item"><a href="" target="_blank">4、jQuery仿淘宝图片放大镜插件imagezoom</a></p>
+        <p class="item"><a href="" target="_blank">5、简单jQuery商品属性选择表单</a></p>
+    </div>
+    <div id="pages"><a id="next" href="index.php?p=1">下一页</a></div>
+    <div class="loading"></div>
+    <script>
+        $('#content').infinitescroll({
+                loading: {
+                    msgText: "",
+                    img: "images/loading.gif",
+                    finishedMsg: '没有新数据了哦...',
+                    selector: '.loading' //loading选择器
+                },
+                navSelector: "#pages", //导航的选择器，会被隐藏
+                nextSelector: "#next",//包含下一页链接的选择器
+                itemSelector: ".item",//你将要取回的选项(内容块)
+                debug: true, //启用调试信息，若启用必须引入debug.js
+                dataType: 'html',//格式要和itemSelector保持一致
+                maxPage: 5,//最大加载的页数
+                //                animate: true, //当有新数据加载进来的时候，页面是否有动画效果，默认没有
+                extraScrollPx: 150, //滚动条距离底部多少像素的时候开始加载，默认150
+                //                bufferPx: 40, //载入信息的显示时间，时间越大，载入信息显示时间越短
+                errorCallback: function() { //加载完数据后的回调函数
+                },
+                path: function(index) { //获取下一页方法
+                    return "index.php?p=" + index;
+                },
+            },
+            function(newElements, data, url) { //回调函数
+                //console.log(data);
+                //alert(url);
+            });
+    </script>
+</body>
+</html>
